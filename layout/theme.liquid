@@ -121,9 +121,9 @@
 
   {% render 'shogun-head' %}
 
+  {% if request.path contains 'tools/recurring/portal/'%}
   {{ 'recharge.scss.css' | asset_url | stylesheet_tag }}
-
-  {% render 'easy-gdpr-settings' %}
+  {% endif %}
 </head>
 
   {% if template contains "index" %}
@@ -250,6 +250,8 @@
     <script src="{{ 'utilities.js' | asset_url }}"></script>
     <script src="{{ 'app.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>
+
+    {% render 'easy-gdpr-settings' %}
     
     {%- if template contains 'collection' -%}
         {%- include 'instantsearch-customizations' -%}
