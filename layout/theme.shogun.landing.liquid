@@ -91,7 +91,7 @@ This file can be re-written at any time.
       {{ "shopify_common.js" | shopify_asset_url | script_tag }}
       {{ "customer_area.js" | shopify_asset_url | script_tag }}
     {% endif %}
-    {{ content_for_header }}
+    
 
     {% include 'social-meta-info' %}
     {% if collection.previous_product %}<link rel="prev" href="{{ collection.previous_product }}">{% endif %}
@@ -194,7 +194,7 @@ This file can be re-written at any time.
   
   
   {{ content_for_layout }}
-  
+  {{ content_for_header }}
   <script id="dsq-count-scr" src="//{{ settings.disqus_shortname }}.disqus.com/count.js" async></script>
 <script src="{{ 'jquery.min.js' | asset_url }}"></script>
 <script type="text/javascript" src="/services/javascripts/currencies.js" data-no-instant></script>
