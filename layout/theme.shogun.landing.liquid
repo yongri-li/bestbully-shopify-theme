@@ -128,7 +128,9 @@ This file can be re-written at any time.
 
   {% render 'shogun-head' %}
 
-  {{ 'recharge.scss.css' | asset_url | stylesheet_tag }}
+  {% if request.path contains 'tools/recurring/portal/'%}
+    {{ 'recharge.scss.css' | asset_url | stylesheet_tag }}
+  {% endif %}
 
 </head>
 
