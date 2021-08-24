@@ -21,3 +21,6 @@ $(document).ready(function() {
 
   }
 });
+
+// remove Instantsearch plus(fast simon) autocomplete/search from recharge quick login
+jQuery('input[name="verification_code"').attr('isp_ignore', true);
