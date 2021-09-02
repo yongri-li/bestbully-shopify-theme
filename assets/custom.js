@@ -22,5 +22,21 @@ $(document).ready(function() {
   }
 });
 
+// dinamically update breadcrumb "Products" to collection if set in sessionStorage
+// The sessionStorage items are added in collection.liquid template
+function updateBreadcrumb() {
+  var url = sessionStorage.getItem('collection_url');
+  var title = sessionStorage.getItem('collection_title');
+  if (url && title) {
+    var urlEl = document.getElementById('breadcrumb-collection-url');
+    var titleEl = document.getElementById('breadcrumb-collection-title');
+    if(urlEl && titleEl) {
+      urlEl.href= url;
+      titleEl.textContent = title;
+    }
+  }
+}
+updateBreadcrumb();
+
 // remove Instantsearch plus(fast simon) autocomplete/search from recharge quick login
 jQuery('input[name="verification_code"]').attr('isp_ignore', true);
