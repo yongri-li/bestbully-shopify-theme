@@ -132,6 +132,16 @@ This file can be re-written at any time.
 
   {% render 'easy-gdpr-settings' %}
 
+<!-- GSSTART Image swap. Do not change -->
+<script  type="text/javascript">
+  gsCollection = {
+ {% if collection.products %}      {% paginate collection.products by 8 %}        {% for product in collection.products %} {% assign imagescount = product.images | size %}            {% if imagescount > 1 %}             '{{ product.handle }}' : [ 
+                {% for image in product.images  limit:2 %} "{{ image | img_url: '256x' }}", {% endfor %}
+                ],
+            {% endif %}        {% endfor %}      {% endpaginate %}    {% endif %}   };
+</script>
+{% if product.id > 1 %} {% else %} {% if collection.products  or template contains "index" %}<script type="text/javascript" src="https://gravity-apps.com/gravify/js/shopify/image_swap5306.js?v=b6a4c5bde3ed72475d7f39d4a8e3be48"></script> {% endif %} {% endif %}
+<!-- Image swap code end. Do not change GSEND -->
 </head>
 
 
@@ -216,7 +226,7 @@ This file can be re-written at any time.
       }
 
       if (!inIframe()){
-        InstantClick.on('change', function() {
+        InstantClick.on('change', function() { return;
 try { setTimeout(function(){StampedFn.reloadUGC();},1000); } catch (e){}
 
 try { setTimeout(function(){StampedFn.reloadUGC();},1000); } catch (e){}
@@ -233,7 +243,7 @@ try { setTimeout(function(){StampedFn.reloadUGC();},1000); } catch (e){}
           $('body').removeClass('fancybox-active');
           $.fancybox.destroy();
 
-          InstantClick.init();
+          //InstantClick.init();
 
         });
       }
