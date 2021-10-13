@@ -415,7 +415,7 @@
                     <a href="{{ routes.cart_url }}" class="{% if section.settings.cart_icon == "cart" %}icon-cart{% else %}icon-bag{% endif %} mini_cart dropdown_link" data-no-instant>
                       <span class="cart_count">{{ cart.item_count }}</span>
                     </a>
-                    {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
+                    {% comment %} {% unless settings.cart_action == 'ajax' and template contains 'cart' %}
                       <div class="tos_warning cart_content animated fadeIn">
                         <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
                           <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
@@ -582,7 +582,7 @@
                           </ul>
                         </form>
                       </div>
-                    {% endunless %}
+                    {% endunless %} {% endcomment %}
                   </div>
                 {% endif %}
 

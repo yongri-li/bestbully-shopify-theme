@@ -50,6 +50,11 @@
     <a href="{{ url }}" title="{{ collection.title | escape }}" class="breadcrumb_link">
       <span>{{ collection.title }}</span>
       </a>
+  {% elsif product %}
+    {% assign url = '/collections/all-products' %}
+    <a href="{{ url }}" title="{{ collections.all.title }}" class="breadcrumb_link" id="breadcrumb-collection-url">
+      <span  id="breadcrumb-collection-title">{{ collections.all.title }}</span>
+    </a>
   {% else %}
     {% assign url = '/collections/all-products' %}
     <a href="{{ url }}" title="{{ collections.all.title }}" class="breadcrumb_link">

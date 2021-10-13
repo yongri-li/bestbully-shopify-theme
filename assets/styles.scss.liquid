@@ -12663,7 +12663,7 @@ html, body {
 // Instasearch Overrides.
 #isp_left_container_facets .isp_search_res_facets_container .isp_single_facet_wrapper {
     margin-right: 30px !important;
-    display: none;
+    //display: none;
 
     &.visible {
         display: block;
@@ -12758,7 +12758,7 @@ li.isp_grid_product input[type=submit].isp_add_to_cart_btn {
 
 .isp_facet_value .isp_raty_applied {
     position: relative;
-    left: 20px;
+    left: 0px;
     top: 1px;
 }
 
@@ -13362,4 +13362,12 @@ li.isp_grid_product {
       }
     }
   }
+}
+
+li.isp_grid_product div.isp_product_info {
+    padding: 5px 15px !important;
+}
+
+li.isp_grid_product div.isp_product_info .isp_compare_at_price {
+    display: inherit !important;
 }
