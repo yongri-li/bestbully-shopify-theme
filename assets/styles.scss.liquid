@@ -13410,3 +13410,22 @@ li.isp_grid_product div.isp_product_info .isp_compare_at_price {
       color: inherit;
     }
 }
+
+:not(.horizontal) .isp_facet_title:not(.isp_sellable_only_title) {
+    display: flex !important;
+}
+
+.isp_serp_left_nav_sticky {
+    position: absolute !important;
+}
+}
+a:focus[facet_id="Isp-on-sale"] {
+    outline: unset !important;
+}
+/* Re-Position OnSale Filter */
+.isp_search_res_facets_container {
+    display: grid;
+}
+div#single_facet_On_Sale {
+    order: 30;
+}
