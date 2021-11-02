@@ -494,32 +494,32 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 ================================================== */
 
 {%- capture font_settings_list -%}
-  {{ settings.regular__font | font_face: font_display: 'swap' }}~
-  {{ settings.regular__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.regular__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.regular__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.logo__font | font_face: font_display: 'swap' }}~
-  {{ settings.logo__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.logo__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.logo__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.headline__font | font_face: font_display: 'swap' }}~
-  {{ settings.headline__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.headline__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.headline__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_modify: 'weight', 'lighter' | font_face: font_display: 'swap' }}~
-  {{ settings.nav__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'lighter' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_headline__font | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_headline__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_headline__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_headline__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_subtitle__font | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_subtitle__font | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_subtitle__font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}~
-  {{ settings.slideshow_subtitle__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face: font_display: 'swap' }}
+  {{ settings.regular__font | font_face }}~
+  {{ settings.regular__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.regular__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.regular__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.logo__font | font_face }}~
+  {{ settings.logo__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.logo__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.logo__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.headline__font | font_face }}~
+  {{ settings.headline__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.headline__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.headline__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.nav__font | font_face }}~
+  {{ settings.nav__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.nav__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.nav__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.nav__font | font_modify: 'weight', 'lighter' | font_face }}~
+  {{ settings.nav__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'lighter' | font_face }}~
+  {{ settings.slideshow_headline__font | font_face }}~
+  {{ settings.slideshow_headline__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.slideshow_headline__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.slideshow_headline__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.slideshow_subtitle__font | font_face }}~
+  {{ settings.slideshow_subtitle__font | font_modify: 'weight', 'bolder' | font_face }}~
+  {{ settings.slideshow_subtitle__font | font_modify: 'style', 'italic' | font_face }}~
+  {{ settings.slideshow_subtitle__font | font_modify: 'style', 'italic' | font_modify: 'weight', 'bolder' | font_face }}
 
 {%- endcapture -%}
 {%- assign font_array = font_settings_list | split: '~' -%}
@@ -13418,6 +13418,24 @@ li.isp_grid_product div.isp_product_info .isp_compare_at_price {
 .isp_serp_left_nav_sticky {
     position: absolute !important;
 }
+
+.isp_single_facet_wrapper .isp_facet_title .isp_facet_title_name {
+    color: black !important;
+}
+
+
+
+#isp_left_container_facets .isp_search_res_facets_container .isp_facet_value a.isp_on_sale_only_checkbox[facet_id="Isp-on-sale"] {
+    display: block !important;
+    padding-left: 23px !important;
+}
+body :not(.horizontal) .isp_facet_title:not(.isp_sellable_only_title).isp_on_sale_only_title {
+    display: contents !important;
+}
+div#single_facet_On_Sale {
+    border: 0px !important;
+    padding: 0 !important;
+    margin-bottom: 0px !important;
 }
 a:focus[facet_id="Isp-on-sale"] {
     outline: unset !important;
