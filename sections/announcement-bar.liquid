@@ -1,0 +1,66 @@
+
+{% if section.settings.enable %}
+<div class="announcement-bar" style="background: {{ section.settings.bg }}">
+    <div class="container">
+        <div class="announcement-bar__text" style="color: {{ section.settings.text_color }}">
+            <a href="{{ section.settings.url }}">{{ section.settings.text }}</a>
+            <div class="mobile-text">
+                <a href="{{ section.settings.mobile_url }}" >{{ section.settings.mobile_text }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<script>
+  
+</script>
+{% schema %}
+ 
+{
+  "name": "Announcement Bar",
+  "class": "announcement-section",
+  "settings": [
+    {
+        "type": "header",
+        "content": "Announcement bar"
+    },
+    {
+        "type": "checkbox",
+        "id" : "enable",
+        "label" : "Enable"
+    },
+    {
+        "type" : "text",
+        "id" : "text",
+        "label" : "Text"
+    },
+    {
+        "type" : "url",
+        "id" : "url",
+        "label" : "Link"
+    },
+    {
+        "type" : "text",
+        "id" : "mobile_text",
+        "label" : "Mobile Text"
+    },
+    {
+        "type" : "url",
+        "id" : "mobile_url",
+        "label" : "Mobile Link"
+    },
+    {
+        "type" : "color",
+        "id" : "bg",
+        "label" : "Background"
+    },
+    {
+        "type" : "color",
+        "id" : "text_color",
+        "label" : "Text Color"
+    }
+
+    ]
+}
+{% endschema %}

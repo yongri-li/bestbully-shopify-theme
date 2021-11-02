@@ -13371,3 +13371,42 @@ li.isp_grid_product div.isp_product_info {
 li.isp_grid_product div.isp_product_info .isp_compare_at_price {
     display: inherit !important;
 }
+
+.announcement-bar{
+  .mobile-text {
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 14px;
+    text-transform: none;
+    display: none;
+  }
+
+  @media (max-width: 800px){
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3; 
+
+    .container{
+      padding: 5px 0px;
+    }
+
+    .mobile-text{
+      display: block;
+    }
+  }
+
+  
+}
+.announcement-bar__text {
+    font-family: "Avenir Next",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+    a{
+      color: inherit;
+    }
+}

@@ -40,3 +40,18 @@ updateBreadcrumb();
 
 // remove Instantsearch plus(fast simon) autocomplete/search from recharge quick login
 jQuery('input[name="verification_code"]').attr('isp_ignore', true);
+
+
+function adjustAnnouncementBar(){
+  if( $(".announcement-bar").length > 0 ){
+    $("#header").css('top', $(".announcement-bar").height() + "px");
+  }
+}
+$(document).ready(function(){
+  console.log("Adjusting header according to announcement bar...");
+  adjustAnnouncementBar();
+
+  $(window).resize(() => {
+    adjustAnnouncementBar();
+  })
+});
