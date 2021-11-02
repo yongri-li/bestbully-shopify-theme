@@ -60,6 +60,11 @@
                 if ( values.length < 1 && !$jquery_isp(this).closest('.isp_single_facet_wrapper').hasClass('collapsed') ) {
                     $jquery_isp(this).click();
                 }
+
+
+                if( $jquery_isp(this).attr('title') == "Deals") {
+                  $jquery_isp(this).trigger('click');
+                }
             });
 
             $jquery_isp('.isp_single_facet_wrapper').addClass('visible');
