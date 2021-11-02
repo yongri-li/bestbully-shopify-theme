@@ -83,10 +83,7 @@ quickshop: <boolean>
               {% endif %}
               <div class="image__container" style="max-width: {{original_image_width}}">
                 {% if product.images.size > 0 %}
-                  <script>console.log({{ product.images.size | json }});</script>
                   <img  src="{{ image_100x }}"
-                        width="672"
-                        height="672"
                         alt="{{ image_alt | escape }}"
                         class=" lazyload {{ settings.image_loading_style }}"
                         data-image-id="{{ product.media[forloop.index0].id }}"
@@ -98,7 +95,8 @@ quickshop: <boolean>
                                       {{ image_400x }} 400w,
                                       {{ image_600x }} 600w,
                                       {{ image_800x }} 800w,
-                                      {{ image_1200x }} 1200w"
+                                      {{ image_1200x }} 1200w,
+                                      {{ image_2000x }} 2000w"
                         />
                 {% else %}
                   <img src="{{ image | img_url: 'master' }}" />
@@ -153,7 +151,7 @@ quickshop: <boolean>
           {% endif %}
 
           <div tabindex="0" class="gallery-cell" data-title="{{ image_alt | escape }}">
-            <img src="{{ media | img_url: '200x' }}" alt="" width="135" height="135">
+            <img src="{{ media | img_url: '300x' }}" alt="">
             {% if thumbnail_badge == 'video-thumbnail' %}
               <svg class="media-badge" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 25H25V1H1V25Z" fill="white"/><path class="media-badge__outline" d="M0.5 25V25.5H1H25H25.5V25V1V0.5H25H1H0.5V1V25Z" stroke="black" stroke-opacity="0.05"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.19995 5.8V20.2L19.3999 12.5858L8.19995 5.8Z" fill="#3A3A3A" fill-opacity="0.6"/></svg>
             {% elsif thumbnail_badge == '3d-thumbnail' %}

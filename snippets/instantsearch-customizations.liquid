@@ -54,17 +54,20 @@
 
             // Updating Facets behaviors.
             $jquery_isp('.isp_facet_title').each( function () {
-                var values = $(this).closest('.isp_single_facet_wrapper')
-                    .find('[aria-checked=true]');
+              if(!this.classList.contains("custom-collapse")){
+                console.log(this);
+                ispFacetSlider(this);
+				        this.classList.add("custom-collapse");
+              }
+              if( $jquery_isp(this).attr('title') == "Deals") {
+                $jquery_isp(this).trigger('click');
+              }
+//                 var values = $(this).closest('.isp_single_facet_wrapper')
+//                     .find('[aria-checked=true]');
 
-                if ( values.length < 1 && !$jquery_isp(this).closest('.isp_single_facet_wrapper').hasClass('collapsed') ) {
-                    $jquery_isp(this).click();
-                }
-
-
-                if( $jquery_isp(this).attr('title') == "Deals") {
-                  $jquery_isp(this).trigger('click');
-                }
+//                 if ( values.length < 1 && !$jquery_isp(this).closest('.isp_single_facet_wrapper').hasClass('collapsed') ) {
+//                     $jquery_isp(this).click();
+//                 }
             });
 
             $jquery_isp('.isp_single_facet_wrapper').addClass('visible');
@@ -72,11 +75,17 @@
             $jquery_isp('#isp_left_container_header').append('<h3>Filter</h3>');
 
             // Removing facets with only one option
-            $jquery_isp('.isp_single_facet_wrapper').each(function() {
-                if ($jquery_isp(this).find('.isp_facet_value').length === 1) {
-                    $jquery_isp(this).remove();
-                }
-            });
+//             $jquery_isp('.isp_single_facet_wrapper').each(function() {
+//                 if ($jquery_isp(this).find('.isp_facet_value').length === 1) {
+//                     $jquery_isp(this).remove();
+//                 }
+//             });
+
+
+          console.log("displaying deals filter");
+
+          const deals = $("#single_facet_deals");
+          console.log(deals);
         },
 
         isp_add_to_cart_callback: function(product_id, form_id) {

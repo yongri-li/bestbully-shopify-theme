@@ -7,10 +7,14 @@
     We are hiding all information from index except image and title. 
   {% endcomment %}
   {%- unless template contains 'index' -%}
-            <span class=" stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" data-product-title="{{product.title}}" data-product-type="{{product.type}}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
+            <span class=" stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" data-product-title="{{product.title}}" data-product-type="{{product.type}}" style="display:block;"></span>
          {% if settings.enable_shopify_collection_badges %}
            <div class="shopify-reviews reviewsVisibility--{{settings.enable_shopify_review_comments}}">
-             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+           
+<!-- Stamped - Begin badge -->
+<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;">{{ product.metafields.stamped.badge }}</span>
+<!-- Stamped - End badge -->
+ 
            </div>
          {% endif %}
           {% if collection_handles contains 'coming-soon' %}

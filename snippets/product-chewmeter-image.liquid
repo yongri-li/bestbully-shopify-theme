@@ -46,8 +46,6 @@
           <div class="image__container" style="max-width: {{original_image_width}}">
             {% if product.images.size > 0 %}
               <img  src="{{ image_100x }}"
-                    width="672"
-                    height="672"
                     alt="{{ image_alt | escape }}"
                     class=" lazyload {{ settings.image_loading_style }}"
                     data-image-id="{{ product.media[forloop.index0].id }}"
@@ -59,7 +57,8 @@
                                   {{ image_400x }} 400w,
                                   {{ image_600x }} 600w,
                                   {{ image_800x }} 800w,
-                                  {{ image_1200x }} 1200w"
+                                  {{ image_1200x }} 1200w,
+                                  {{ image_2000x }} 2000w"
                     />
             {% else %}
               <img src="{{ image | img_url: 'master' }}" />
