@@ -1,4 +1,12 @@
 
+{% if section.settings.promo_text != blank %}
+<div class="promo_banner">
+    <div class="promo_banner__content">
+        {{ section.settings.promo_text }}
+    </div>
+    <div class="promo_banner-close"></div>
+</div>
+{% endif %}
 {% if section.settings.enable %}
 <div class="announcement-bar" style="background: {{ section.settings.bg }}">
     <div class="container">
@@ -24,6 +32,12 @@
     {
         "type": "header",
         "content": "Announcement bar"
+    },
+    {
+        "type": "richtext",
+        "id": "promo_text",
+        "label": "Text",
+        "info": "Maximum character limit is 170"
     },
     {
         "type": "checkbox",

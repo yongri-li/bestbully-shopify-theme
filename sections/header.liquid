@@ -46,14 +46,6 @@
 
 {% comment %}Mobile navigation{% endcomment %}
 <header id="header" class="mobile_nav-fixed--{{ section.settings.fixed_header }}">
-  {% if section.settings.promo_text != blank %}
-    <div class="promo_banner">
-      <div class="promo_banner__content">
-        {{ section.settings.promo_text }}
-      </div>
-      <div class="promo_banner-close"></div>
-    </div>
-  {% endif %}
   <div class="top_bar clearfix">
     <a class="mobile_nav dropdown_link" data-dropdown-rel="menu" data-no-instant="true">
       <div>
@@ -718,12 +710,6 @@
     {
       "type": "header",
       "content": "Announcement bar"
-    },
-    {
-      "type": "richtext",
-      "id": "promo_text",
-      "label": "Text",
-      "info": "Maximum character limit is 170"
     },
     {
      "type": "header",
