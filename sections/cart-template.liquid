@@ -136,6 +136,8 @@
                     <span class="ss-icon product-plus js-change-quantity" data-func="plus"><span class="icon-plus"></span></span>
                   </div>
 
+                  
+
                   <p class="price_total">
                     <strong>{{ 'cart.general.total' | t }}:</strong>
                     {% if item.line_level_discount_allocations.size > 0 %}
@@ -147,6 +149,8 @@
                       {{ item.original_line_price | money }}
                     </span>
                   </p>
+
+                  {% render 'shipping-delay' product: item.product, class_name: "cart-shipping-delay" %}
 
                   {% include 'cart-subscription-upsell' with item: item %}
               

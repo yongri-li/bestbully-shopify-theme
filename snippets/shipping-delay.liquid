@@ -1,0 +1,9 @@
+{% if product.tags contains 'shipping-delay' or product.metafields.shipping_delay.message != blank %}
+    <div class="shipping-delay {{ class_name }}">
+      {% if product.metafields.shipping_delay.message != blank %}
+        {{product.metafields.shipping_delay.message}}
+      {% else %}
+        {{ settings.shipping_delay }}
+      {% endif %}
+    </div>
+{% endif %}
