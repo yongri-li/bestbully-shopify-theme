@@ -45,17 +45,6 @@
     ]
   },
   {
-    "name": "Shipping Delay",
-    "settings": [
-      {
-        "type": "text",
-        "id": "shipping_delay",
-        "label": "Message",
-        "default": "Hight Demand Product"
-      }
-    ]
-  },
-  {
     "name": "[Checkout] Free Shipping Bar",
     "settings": [
       {

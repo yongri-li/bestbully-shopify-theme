@@ -1,9 +1,9 @@
-{% if product.tags contains 'shipping-delay' or product.metafields.shipping_delay.message != blank %}
+{% if product.tags contains 'delayshipping' or product.metafields.delayshipping.message != blank %}
     <div class="shipping-delay {{ class_name }}">
-      {% if product.metafields.shipping_delay.message != blank %}
-        {{product.metafields.shipping_delay.message}}
+      {% if product.metafields.delayshipping.message != blank %}
+        {{product.metafields.delayshipping.message}}
       {% else %}
-        {{ settings.shipping_delay }}
+        {{ shop.metafields.delayshipping.message }}
       {% endif %}
     </div>
 {% endif %}
