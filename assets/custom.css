@@ -1,19 +1,27 @@
 .shipping-delay {
     padding: 15px 20px;
-    border: 5px solid lightgray;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    display: inline-block;
-    max-width: 400px;
+    width: 100%;
+    background-color: rgb(155, 225, 247);
+    border: none;
+    display: flex;
+    position: relative;
+    padding-left: 50px;
 }
 
-@media (max-width: 768px) {
-    .shipping-delay {
-        font-size: 14px;
-        padding: 5px 10px;
-        border-width: 3px;
-    }
+.shipping-delay p {
+    margin: 0px;
+    line-height: 1.3;
+}
+
+.shipping-delay svg {
+    width: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .shipping-delay.product-shipping-delay {
