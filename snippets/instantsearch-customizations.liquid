@@ -26,21 +26,7 @@
 
                 if (( parseFloat(product.p) < parseFloat(product.p_c) ) || ( parseFloat(product.p) < parseFloat(product.p_min_c) )) {
                     var $wrapper = $product.find('.isp_product_price_wrapper');
-                    /*
-                    var $min = $('<span>', {
-                        "class": "isp_product_price money",
-                        "data-currency": "USD",
-                        "data-currency-usd": product.p_min,
-                        "title": '$' + product.p_min
-                    }).text('$' + product.p_min);
-                    var $max = $('<span>', {
-                        "class": "isp_product_price money",
-                        "data-currency": "USD",
-                        "data-currency-usd": product.p_max,
-                        "title": '$' + product.p_max
-                    }).text('$' + product.p_max);
-
-                    $wrapper.html($min).append(' - ').append($max);*/
+                    
                   
                   	$wrapper.closest('.isp_grid_product').addClass('isp_badge isp_badge_sale ');
                 }
@@ -62,30 +48,14 @@
               if( $jquery_isp(this).attr('title') == "Deals") {
                 $jquery_isp(this).trigger('click');
               }
-//                 var values = $(this).closest('.isp_single_facet_wrapper')
-//                     .find('[aria-checked=true]');
-
-//                 if ( values.length < 1 && !$jquery_isp(this).closest('.isp_single_facet_wrapper').hasClass('collapsed') ) {
-//                     $jquery_isp(this).click();
-//                 }
             });
 
             $jquery_isp('.isp_single_facet_wrapper').addClass('visible');
             $jquery_isp('#isp_left_container_header h3').remove();
             $jquery_isp('#isp_left_container_header').append('<h3>Filter</h3>');
-
-            // Removing facets with only one option
-//             $jquery_isp('.isp_single_facet_wrapper').each(function() {
-//                 if ($jquery_isp(this).find('.isp_facet_value').length === 1) {
-//                     $jquery_isp(this).remove();
-//                 }
-//             });
-
-
-          console.log("displaying deals filter");
-
+            
           const deals = $("#single_facet_deals");
-          console.log(deals);
+
         },
 
         isp_add_to_cart_callback: function(product_id, form_id) {
