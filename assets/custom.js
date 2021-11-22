@@ -56,11 +56,7 @@ function updateHeader() {
     var announcement_bar_height = $('.announcement-bar').height();
     if(position > 0) {
       $('.announcement-bar').css({'top': '0px'});
-      if (old_position > position) {
-        $('#header').css({'top': announcement_bar_height + 'px'});
-      } else {
-        $('#header').css({'top': '0px'});
-      }
+      $('#header').css({'top': announcement_bar_height + 'px'});
     } else {
       $('.announcement-bar').css({'top': promo_banner_height + 'px'});
       $('#header').css({'top': (promo_banner_height + announcement_bar_height) + 'px'});
