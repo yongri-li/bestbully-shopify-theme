@@ -47,6 +47,31 @@ function adjustAnnouncementBar(){
     $("#header").css('top', $(".announcement-bar").height() + "px");
   }
 }
+
+
+function updateHeader() {
+  if($(window).width() < 768) {
+    var position = $(window).scrollTop();
+    var promo_banner_height = $('.promo_banner').height();
+    var announcement_bar_height = $('.announcement-bar').height();
+    if(position > 0) {
+      $('.announcement-bar').css({'top': '0px'});
+      if (old_position > position) {
+        $('#header').css({'top': announcement_bar_height + 'px'});
+      } else {
+        $('#header').css({'top': '0px'});
+      }
+    } else {
+      $('.announcement-bar').css({'top': promo_banner_height + 'px'});
+      $('#header').css({'top': (promo_banner_height + announcement_bar_height) + 'px'});
+    }
+
+    old_position = position;
+  }
+}
+
+
+
 $(document).ready(function(){
   console.log("Adjusting header according to announcement bar...");
   adjustAnnouncementBar();
@@ -54,4 +79,13 @@ $(document).ready(function(){
   $(window).resize(() => {
     adjustAnnouncementBar();
   })
+
+  var old_position = $(window).scrollTop();
+
+  $(window).on('scroll', function(){
+    updateHeader();
+  });
+
+  updateHeader();
 });
+
