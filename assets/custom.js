@@ -49,6 +49,18 @@ function adjustAnnouncementBar(){
 }
 
 
+
+$(document).ready(function(){
+  console.log("Adjusting header according to announcement bar...");
+  if($(window).width() > 768) {
+    adjustAnnouncementBar();
+
+    $(window).resize(() => {
+      adjustAnnouncementBar();
+    })
+  }
+});
+
 function updateHeader() {
   if($(window).width() < 768) {
     var position = $(window).scrollTop();
@@ -58,30 +70,14 @@ function updateHeader() {
       $('.announcement-bar').css({'top': '0px'});
       $('#header').css({'top': announcement_bar_height + 'px'});
     } else {
-      $('.announcement-bar').css({'top': promo_banner_height + 'px'});
-      $('#header').css({'top': (promo_banner_height + announcement_bar_height) + 'px'});
+      var height = Math.abs(position);
+      $('.announcement-bar').css({'top': (height + promo_banner_height) + 'px'});
+      $('#header').css({'top': (height + promo_banner_height + announcement_bar_height) + 'px'});
     }
-
-    old_position = position;
   }
 }
 
-
-
-$(document).ready(function(){
-  console.log("Adjusting header according to announcement bar...");
-  adjustAnnouncementBar();
-
-  $(window).resize(() => {
-    adjustAnnouncementBar();
-  })
-
-  var old_position = $(window).scrollTop();
-
-  $(window).on('scroll', function(){
-    updateHeader();
-  });
-
+$(window).on('load scroll', function(){
   updateHeader();
 });
 

@@ -31,3 +31,21 @@
 .shipping-delay.cart-shipping-delay {
     margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+    .isp_related_wrapper .slick-prev {
+        left: -15px !important;
+    }
+
+    .isp_related_wrapper .slick-next {
+        right: -15px !important;
+    }
+
+    .announcement-bar {
+        top: 30px;
+    }
+
+    #header {
+        top: 90px;
+    }
+}
