@@ -61,18 +61,25 @@ $(document).ready(function(){
   }
 });
 
+var is_load = false;
+
 function updateHeader() {
   if($(window).width() < 768) {
     var position = $(window).scrollTop();
     var promo_banner_height = $('.promo_banner').height();
     var announcement_bar_height = $('.announcement-bar').height();
     if(position > 0) {
-      $('.announcement-bar').css({'top': '0px'});
-      $('#header').css({'top': announcement_bar_height + 'px'});
+      $('.announcement-bar').css({'position':'fixed','top': '0px','margin-top':'-0px'});
+      $('#header').css({'position':'fixed','top': announcement_bar_height + 'px','margin-top': '0px'});
     } else {
-      var height = Math.abs(position);
-      $('.announcement-bar').css({'top': (height + promo_banner_height) + 'px'});
-      $('#header').css({'top': (height + promo_banner_height + announcement_bar_height) + 'px'});
+      if(is_load) {
+        $('.announcement-bar').css({'position':'relative','margin-top':'0px'});
+        $('#header').css({'position':'relative','margin-top':'-35px'});
+      } else {
+        $('.announcement-bar').css({'position':'relative','margin-top':'-30px'});
+        $('#header').css({'position':'relative','margin-top':'28px'});
+        is_load = true;
+      }
     }
   }
 }

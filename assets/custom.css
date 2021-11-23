@@ -48,4 +48,12 @@
     #header {
         top: 90px;
     }
+
+    .dropdown_container {
+        height: 100vh;
+    }
+
+    #pagecontent {
+        padding: 0px !important;
+    }
 }
