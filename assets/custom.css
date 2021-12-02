@@ -35,10 +35,12 @@
 @media (max-width: 768px) {
     .isp_related_wrapper .slick-prev {
         left: -15px !important;
+        z-index: 1 !important;
     }
 
     .isp_related_wrapper .slick-next {
         right: -15px !important;
+        z-index: 1 !important;
     }
 
     .announcement-bar {
