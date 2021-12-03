@@ -68,18 +68,20 @@ function updateHeader() {
     var position = $(window).scrollTop();
     var promo_banner_height = $('.promo_banner').height();
     var announcement_bar_height = $('.announcement-bar').height();
-    if(position > 0) {
-      $('.announcement-bar').css({'position':'fixed','top': '0px','margin-top':'-0px'});
-      $('#header').css({'position':'fixed','top': announcement_bar_height + 'px','margin-top': '0px'});
+    if (position > 0 && position < 50) {
+      console.log('none');
+      $('.promo_banner').hide();
+      $('.announcement-bar').css({'display': 'none'});
+      $('#header').css({'display': 'none'});
+    }
+    else if(position >= 50) {
+      console.log('block');
+      $('.announcement-bar').css({'display': 'block', 'position':'fixed','top': '0px','margin-top':'-0px'});
+      $('#header').css({'display': 'block', 'position':'fixed','top': announcement_bar_height + 'px','margin-top': '0px'});
     } else {
-      if(is_load) {
-        $('.announcement-bar').css({'position':'relative','margin-top':'0px'});
-        $('#header').css({'position':'relative','margin-top':'-35px'});
-      } else {
-        $('.announcement-bar').css({'position':'relative','margin-top':'-30px'});
-        $('#header').css({'position':'relative','margin-top':'28px'});
-        is_load = true;
-      }
+      $('.promo_banner').show();
+      $('.announcement-bar').css({'display': 'block', 'position':'fixed','top': '0px','margin-top': promo_banner_height + 'px'});
+      $('#header').css({'display': 'block', 'position':'fixed','top': promo_banner_height + announcement_bar_height + 'px','margin-top': '0px'});
     }
   }
 }
