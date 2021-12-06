@@ -59,3 +59,7 @@
         padding: 0px !important;
     }
 }
+
+.announcement-bar__text a {
+    text-decoration: underline;
+}
