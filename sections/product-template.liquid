@@ -302,6 +302,14 @@
   {% endstyle %}
 {% endif %}
 
+{% if product.tags contains 'hide-subscription-details' %}
+<style>
+  .rc_popup {
+    display: none !important;
+  }
+</style>
+{% endif %}
+
 {% comment %} Shopify-XR {% endcomment %}
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
