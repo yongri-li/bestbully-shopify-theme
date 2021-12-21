@@ -59,6 +59,47 @@ $(document).ready(function(){
       adjustAnnouncementBar();
     })
   }
+
+  if($('.inventory-message').length > 0) {
+    var inventory_threshold = $('.inventory-message').data('inventory-threshold');
+    $('.inventory-above').hide();
+    $('.inventory-below').hide();
+
+    if($('#quantity').val() > 0) {
+      $('.inventory-message').addClass('active');
+    } else {
+      $('.inventory-message').removeClass('active');
+    }
+  
+    function changeMessage (state) {
+      if(state == 'above') {
+        $('.inventory-above').show();
+        $('.inventory-below').hide();
+      } else {
+        $('.inventory-above').hide();
+        $('.inventory-below').show();
+      }
+    }
+  
+    if($('#quantity').val() > inventory_threshold) {
+      changeMessage('above');
+    } else {
+      changeMessage('below');
+    }
+  
+    $('#quantity').change(function(){
+      if($(this).val() > 0) {
+        $('.inventory-message').addClass('active');
+      } else {
+        $('.inventory-message').removeClass('active');
+      }
+      if($(this).val() > inventory_threshold) {
+        changeMessage('above');
+      } else {
+        changeMessage('below');
+      }
+    });
+  }
 });
 
 var is_load = false;
@@ -89,24 +130,3 @@ function updateHeader() {
 $(window).on('load scroll', function(){
   updateHeader();
 });
-
-if($('.inventory-message').length > 0) {
-  var inventory_threshold = $('.inventory-message').data('inventory-threshold');
-  $('.inventory-above').hide();
-  $('.inventory-below').hide();
-
-  $('#quantity').change(function(){
-    if($(this).val() > 0) {
-      $('.inventory-message').addClass('active');
-    } else {
-      $('.inventory-message').removeClass('active');
-    }
-    if($(this).val() > inventory_threshold) {
-      $('.inventory-above').show();
-      $('.inventory-below').hide();
-    } else {
-      $('.inventory-above').hide();
-      $('.inventory-below').show();
-    }
-  });
-}
