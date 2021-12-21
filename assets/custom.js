@@ -90,3 +90,23 @@ $(window).on('load scroll', function(){
   updateHeader();
 });
 
+if($('.inventory-message').length > 0) {
+  var inventory_threshold = $('.inventory-message').data('inventory-threshold');
+  $('.inventory-above').hide();
+  $('.inventory-below').hide();
+
+  $('#quantity').change(function(){
+    if($(this).val() > 0) {
+      $('.inventory-message').addClass('active');
+    } else {
+      $('.inventory-message').removeClass('active');
+    }
+    if($(this).val() > inventory_threshold) {
+      $('.inventory-above').show();
+      $('.inventory-below').hide();
+    } else {
+      $('.inventory-above').hide();
+      $('.inventory-below').show();
+    }
+  });
+}
