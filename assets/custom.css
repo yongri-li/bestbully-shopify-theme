@@ -73,14 +73,10 @@
     width: 100%;
     background-color: rgb(155, 225, 247);
     border: none;
-    display: none;
+    display: flex;
     position: relative;
     justify-content: flex-start;
     align-items: center;
-}
-
-.inventory-message.active {
-    display: flex;
 }
 
 .inventory-message p {

@@ -65,22 +65,16 @@ $(document).ready(function(){
     var current_qty = $('#quantity').val();
     if(current_qty > qty) {
       $('#quantity').val(qty);
-      if($('.inventory-message').length > 0) {
-        changeMessage($('#quantity'));
-      }
+    }
+    if($('.inventory-message').length > 0) {
+      changeMessage(qty);
     }
   });
 
-  function changeMessage(obj) {
+  function changeMessage(qty) {
     var inventory_threshold = $('.inventory-message').data('inventory-threshold');
 
-    if(obj.val() >= 0) {
-      $('.inventory-message').addClass('active');
-    } else {
-      $('.inventory-message').removeClass('active');
-    }
-
-    if(obj.val() > inventory_threshold) {
+    if(qty > inventory_threshold) {
       $('.inventory-above').show();
       $('.inventory-below').hide();
     } else {
@@ -91,10 +85,7 @@ $(document).ready(function(){
   }
 
   if($('.inventory-message').length > 0) {
-    changeMessage($('#quantity'));
-    $('#quantity').change(function(){
-      changeMessage($(this));
-    });
+    changeMessage($('.swatch_options input:checked+.swatch-element').data('qty'));
   }
 });
 
