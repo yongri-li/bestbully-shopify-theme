@@ -1,0 +1,6 @@
+{% if product.tags contains 'inventory-threshold' %}
+    <div class="inventory-message {{ class_name }}" data-inventory-threshold="{{ section.settings.inventory_threshold }}">
+        <p class="inventory-above">{{ section.settings.iventory_message_above }}</p>
+        <p class="inventory-below">{{ section.settings.iventory_message_below }}</p>
+    </div>
+{% endif %}

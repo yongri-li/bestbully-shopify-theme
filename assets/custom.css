@@ -63,3 +63,39 @@
 .announcement-bar__text a {
     text-decoration: underline;
 }
+
+.inventory-message {
+    margin-top: 30px;
+    padding: 15px 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    background-color: rgb(155, 225, 247);
+    border: none;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inventory-message p {
+    margin-bottom: 0px;
+}
+
+
+@media (min-width: 799px) {
+    .inventory-message-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 798px) {
+    .inventory-message-desk {
+        display: none !important;
+    }
+
+    .inventory-message {
+        margin-top: 13px;
+    }
+}
