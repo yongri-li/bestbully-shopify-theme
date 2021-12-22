@@ -60,44 +60,40 @@ $(document).ready(function(){
     })
   }
 
-  if($('.inventory-message').length > 0) {
-    var inventory_threshold = $('.inventory-message').data('inventory-threshold');
-    $('.inventory-above').hide();
-    $('.inventory-below').hide();
+  $('.swatch-element').click(function(){
+    var qty = $(this).data('qty');
+    var current_qty = $('#quantity').val();
+    if(current_qty > qty) {
+      $('#quantity').val(qty);
+      if($('.inventory-message').length > 0) {
+        changeMessage($('#quantity'));
+      }
+    }
+  });
 
-    if($('#quantity').val() > 0) {
+  function changeMessage(obj) {
+    var inventory_threshold = $('.inventory-message').data('inventory-threshold');
+
+    if(obj.val() >= 0) {
       $('.inventory-message').addClass('active');
     } else {
       $('.inventory-message').removeClass('active');
     }
-  
-    function changeMessage (state) {
-      if(state == 'above') {
-        $('.inventory-above').show();
-        $('.inventory-below').hide();
-      } else {
-        $('.inventory-above').hide();
-        $('.inventory-below').show();
-      }
-    }
-  
-    if($('#quantity').val() > inventory_threshold) {
-      changeMessage('above');
+
+    if(obj.val() > inventory_threshold) {
+      $('.inventory-above').show();
+      $('.inventory-below').hide();
     } else {
-      changeMessage('below');
+      $('.inventory-above').hide();
+      $('.inventory-below').show();
     }
-  
+    
+  }
+
+  if($('.inventory-message').length > 0) {
+    changeMessage($('#quantity'));
     $('#quantity').change(function(){
-      if($(this).val() > 0) {
-        $('.inventory-message').addClass('active');
-      } else {
-        $('.inventory-message').removeClass('active');
-      }
-      if($(this).val() > inventory_threshold) {
-        changeMessage('above');
-      } else {
-        changeMessage('below');
-      }
+      changeMessage($(this));
     });
   }
 });
