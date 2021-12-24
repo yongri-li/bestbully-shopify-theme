@@ -2194,5 +2194,60 @@
         "info": "Add tags to this list separated with comma to show these tags in Collections"
       }
     ]
+  },
+  {
+    "name": "Product Safety Information",
+    "settings": [
+      {
+        "type": "text",
+        "id": "safety_info_1_tag",
+        "label": "Safety Information 1 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_1_text",
+        "label": "Safety Information 1 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_2_tag",
+        "label": "Safety Information 2 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_2_text",
+        "label": "Safety Information 2 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_3_tag",
+        "label": "Safety Information 3 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_3_text",
+        "label": "Safety Information 3 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_4_tag",
+        "label": "Safety Information 4 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_4_text",
+        "label": "Safety Information 4 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_5_tag",
+        "label": "Safety Information 5 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_5_text",
+        "label": "Safety Information 5 Text"
+      }
+    ]
   }
 ]
