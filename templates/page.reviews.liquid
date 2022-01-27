@@ -1,0 +1,16 @@
+{% render 'shogun-products', content: page %}
+
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen page clearfix">
+  <h1 class="container">
+    {{ page.title }}
+  </h1>
+  {% section 'page-banner' %}
+
+  <div>
+    {% include 'page-multi-column', content: page.content %}
+  </div>
+</div>
+
+

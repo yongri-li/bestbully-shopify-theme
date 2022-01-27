@@ -1,0 +1,43 @@
+<header class="banner center page_banner dark-overlay-{{ section.settings.image_darken }} {% if collection.metafields.layout.mobile_image %}with-mobile-image{% endif %}">
+  {% if collection.image %}
+    {% assign image = collection.image %}
+  {%- elsif section.settings.image -%}
+    {% assign image = section.settings.image %}
+  {%- else %}
+    {% assign image = collection.products.first.featured_image %}
+  {% endif %}
+
+  {%- if collection.metafields.layout.mobile_image -%}         
+     <img src="{{ collection.metafields.layout.mobile_image }}" alt="{{ alt | escape }}" class="mobile-image">
+  {%- endif -%}
+
+  
+
+  {% include 'image-element', image: image, alt: collection.title, stretch_width: true, progressive: true, additional_classes: 'desktop-image' %}
+
+  {% if section.settings.display_collection_title %}
+    <div class="caption captionOverlay--true">
+      <h1 class="headline">{{ collection.title }}</h1>
+    </div>
+  {% endif %}
+</header>
+
+{% schema %}
+{
+  "name": "Page Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1800 x 1000px recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_darken",
+      "label": "Darken image",
+      "default": false
+    }
+  ]
+}
+{% endschema %}
