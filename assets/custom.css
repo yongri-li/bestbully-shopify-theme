@@ -41,11 +41,7 @@
     .isp_related_wrapper .slick-next {
         right: -15px !important;
         z-index: 1 !important;
-    }
-
-    .announcement-bar {
-        top: 30px;
-    }
+    }    
 
     #header {
         top: 90px;
@@ -62,4 +58,8 @@
 
 .announcement-bar__text a {
     text-decoration: underline;
+}
+
+.featured-collection-section .bottom-cta {
+    text-align: center;
 }

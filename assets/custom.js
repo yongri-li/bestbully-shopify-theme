@@ -61,6 +61,10 @@ $(document).ready(function(){
   }
 });
 
+$(document).on('click', '.swatch-element', function(){
+  $('.variant-sku').text('SKU: ' + $(this).data('sku'));
+})
+
 var is_load = false;
 
 function updateHeader() {
@@ -69,13 +73,11 @@ function updateHeader() {
     var promo_banner_height = $('.promo_banner').height();
     var announcement_bar_height = $('.announcement-bar').height();
     if (position > 0 && position < 50) {
-      console.log('none');
       $('.promo_banner').hide();
       $('.announcement-bar').css({'display': 'none'});
       $('#header').css({'display': 'none'});
     }
     else if(position >= 50) {
-      console.log('block');
       $('.announcement-bar').css({'display': 'block', 'position':'fixed','top': '0px','margin-top':'-0px'});
       $('#header').css({'display': 'block', 'position':'fixed','top': announcement_bar_height + 'px','margin-top': '0px'});
     } else {
