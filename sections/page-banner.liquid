@@ -1,27 +1,18 @@
-<header class="banner center page_banner dark-overlay-{{ section.settings.image_darken }} {% if collection.metafields.layout.mobile_image %}with-mobile-image{% endif %}">
-  {% if collection.image %}
-    {% assign image = collection.image %}
-  {%- elsif section.settings.image -%}
-    {% assign image = section.settings.image %}
-  {%- else %}
-    {% assign image = collection.products.first.featured_image %}
-  {% endif %}
+<header class="banner center page_banner dark-overlay-{{ section.settings.image_darken }} with-mobile-imag">
+  {% assign image = section.settings.image %}
 
-  {%- if collection.metafields.layout.mobile_image -%}         
-     <img src="{{ collection.metafields.layout.mobile_image }}" alt="{{ alt | escape }}" class="mobile-image">
-  {%- endif -%}
+  {% assign image_mobile = section.settings.image_mobile | default: image %}
 
+  <div class="hide--mobile">
+    {% include 'image-element', image: image, alt: collection.title, stretch_width: true, progressive: true %}
+  </div>
+  <div class="hide--desktop">
+    {% include 'image-element', image: image_mobile, alt: collection.title, stretch_width: true, progressive: true %}
+  </div>
   
-
-  {% include 'image-element', image: image, alt: collection.title, stretch_width: true, progressive: true, additional_classes: 'desktop-image' %}
-
-  {% if section.settings.display_collection_title %}
-    <div class="caption captionOverlay--true">
-      <h1 class="headline">{{ collection.title }}</h1>
-    </div>
-  {% endif %}
 </header>
 
+<div class="feature_divider"></div>
 {% schema %}
 {
   "name": "Page Banner",
@@ -31,6 +22,11 @@
       "id": "image",
       "label": "Image",
       "info": "1800 x 1000px recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
     },
     {
       "type": "checkbox",

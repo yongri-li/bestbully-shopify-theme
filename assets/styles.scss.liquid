@@ -13474,9 +13474,42 @@ div#single_facet_On_Sale {
 }
 
 .page-reviews div.content {
-  max-width: unset !important;
+  max-width: unset !important; 
+
+  @media (max-width: 1024px) {
+    #shopify-section-page-banner {
+      margin-left: calc(10px - 5%);
+      margin-right: calc(10px - 5%);
+    }        
+  }
+
+  @media (max-width: 480px) {
+    #shopify-section-page-banner {
+      margin-left: -20px;
+      margin-right: -20px;    
+    }
+  }
 }
 
 .page-reviews .banner {
   margin-top: 20px;
+}
+
+#shopify-section-announcement-bar {
+  position: relative;
+  z-index: 1000;
+}
+
+.hide--desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide--mobile {
+    display: none;
+  }
+
+  .hide--desktop {
+    display: block;
+  }
 }
