@@ -1802,6 +1802,13 @@ body.is-active {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  #header.mobile_nav-fixed--true,
+  .mobile_nav-fixed--false.is-active #header {
+    top: 36px;
+  }
+}
+
 #header {
   display: none;
   pointer-events: all;
@@ -13515,7 +13522,7 @@ div#single_facet_On_Sale {
 }
 
 @media (max-width: 768px) {
-  .index-sections {
-    padding-top: 90px;
+  .index-sections, #shopify-section-collection-template-instantsearch {
+    padding-top: 80px;
   }
 }
