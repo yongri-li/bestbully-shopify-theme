@@ -253,7 +253,23 @@
         {%- if product.metafields.bestbullysticks.safety_information != blank -%}
             {{ product.metafields.bestbullysticks.safety_information }}
         {%- else -%}
-            {{ section.settings.bbs_safety_information }}
+            {% assign flag = 0 %}
+            {% for i in (1..5) %}
+              {% assign tag_name = "safety_info_" | append: i | append: "_tag" %}
+              {% assign tag_text = "safety_info_" | append: i | append: "_text" %}
+
+              {% if product.tags contains settings[tag_name] %}
+                {% if settings[tag_text] != blank %}
+                  {% assign flag = 1 %}
+                  {{ settings[tag_text] }}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if flag == 0 %}
+              {{ section.settings.bbs_safety_information }}
+            {% endif %}
         {%- endif -%}
     </div>
 </div>
@@ -302,6 +318,14 @@
       max-height: {{ section.settings.product_height }}px;
     }
   {% endstyle %}
+{% endif %}
+
+{% if product.tags contains 'hide-subscription-details' %}
+<style>
+  .rc_popup {
+    display: none !important;
+  }
+</style>
 {% endif %}
 
 {% comment %} Shopify-XR {% endcomment %}
@@ -623,6 +647,24 @@
       "label": "Safety Information",
       "info": "Default Safety Information to display in product tags. You can override this on a product basis by using the metafield bestbullysticks.safety_information.",
       "default": "<p>Your safety information goes here</p>"
+  },
+  {
+    "type": "text",
+    "id": "iventory_message_above",
+    "label": "Inventory Message Above",
+    "default": "20 available!"
+  },
+  {
+    "type": "text",
+    "id": "iventory_message_below",
+    "label": "Inventory Message Below",
+    "default": "only a few units left!"
+  },
+  {
+    "type": "number",
+    "id": "inventory_threshold",
+    "label": "Inventory Threshold",
+    "default": 20
   }
   ],
   "blocks": [

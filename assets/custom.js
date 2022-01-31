@@ -59,6 +59,34 @@ $(document).ready(function(){
       adjustAnnouncementBar();
     })
   }
+
+  $('.swatch-element').click(function(){
+    var qty = $(this).data('qty');
+    var current_qty = $('#quantity').val();
+    if(current_qty > qty) {
+      $('#quantity').val(qty);
+    }
+    if($('.inventory-message').length > 0) {
+      changeMessage(qty);
+    }
+  });
+
+  function changeMessage(qty) {
+    var inventory_threshold = $('.inventory-message').data('inventory-threshold');
+
+    if(qty > inventory_threshold) {
+      $('.inventory-above').show();
+      $('.inventory-below').hide();
+    } else {
+      $('.inventory-above').hide();
+      $('.inventory-below').show();
+    }
+    
+  }
+
+  if($('.inventory-message').length > 0) {
+    changeMessage($('.swatch_options input:checked+.swatch-element').data('qty'));
+  }
 });
 
 $(document).on('click', '.swatch-element', function(){
@@ -91,4 +119,3 @@ function updateHeader() {
 $(window).on('load scroll', function(){
   updateHeader();
 });
-
