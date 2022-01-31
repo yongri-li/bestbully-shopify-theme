@@ -152,3 +152,8 @@
     </div>
   {% endif %}
 {% endif %}
+<div class="bottom-cta">
+  {% if section.settings.btn_text != blank %}
+      <a href="{{ section.settings.btn_link }}" class="action_button">{{ section.settings.btn_text }}</a>
+  {% endif %}
+</div>

@@ -1802,6 +1802,13 @@ body.is-active {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  #header.mobile_nav-fixed--true,
+  .mobile_nav-fixed--false.is-active #header {
+    top: 36px;
+  }
+}
+
 #header {
   display: none;
   pointer-events: all;
@@ -6546,6 +6553,12 @@ div.container {
 }
 
 div.content { padding: 30px 0px 15px 0; }
+
+@media (max-width: 768px) {
+  div.content {
+    padding-top: 90px;
+  }
+}
 
 /* #Header
 ================================================== */
@@ -13465,4 +13478,51 @@ div#single_facet_On_Sale {
   font-size: 18px;
   font-weight: 400;
   display: inline-block;
+}
+
+.page-reviews div.content {
+  max-width: unset !important; 
+
+  @media (max-width: 1024px) {
+    #shopify-section-page-banner {
+      margin-left: calc(10px - 5%);
+      margin-right: calc(10px - 5%);
+    }        
+  }
+
+  @media (max-width: 480px) {
+    #shopify-section-page-banner {
+      margin-left: -20px;
+      margin-right: -20px;    
+    }
+  }
+}
+
+.page-reviews .banner {
+  margin-top: 20px;
+}
+
+#shopify-section-announcement-bar {
+  position: relative;
+  z-index: 1000;
+}
+
+.hide--desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide--mobile {
+    display: none;
+  }
+
+  .hide--desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .index-sections, #shopify-section-collection-template-instantsearch {
+    padding-top: 80px;
+  }
 }

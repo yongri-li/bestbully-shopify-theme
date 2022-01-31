@@ -1,0 +1,39 @@
+<header class="banner center page_banner dark-overlay-{{ section.settings.image_darken }} with-mobile-imag">
+  {% assign image = section.settings.image %}
+
+  {% assign image_mobile = section.settings.image_mobile | default: image %}
+
+  <div class="hide--mobile">
+    {% include 'image-element', image: image, alt: collection.title, stretch_width: true, progressive: true %}
+  </div>
+  <div class="hide--desktop">
+    {% include 'image-element', image: image_mobile, alt: collection.title, stretch_width: true, progressive: true %}
+  </div>
+  
+</header>
+
+<div class="feature_divider"></div>
+{% schema %}
+{
+  "name": "Page Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1800 x 1000px recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_darken",
+      "label": "Darken image",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

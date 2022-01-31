@@ -242,6 +242,8 @@
     </div>
     <div class="product-tabs__tab active" data-tab="description">
         {{ product.description }}
+
+        <div class="variant-sku" style="font-weight: bold;">SKU: {{ product.selected_or_first_available_variant.sku }}</div>
     </div>
     <div class="product-tabs__tab" data-tab="nutrition">
         {% include 'product-specs' %}
