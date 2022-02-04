@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-faq-template",
+      "blocks": {
+        "cd81cd2e-bb4f-494d-8915-4c426b581145": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions"
+          }
+        },
+        "a258f041-e06b-4844-9e7a-ade5af029058": {
+          "type": "Content",
+          "settings": {
+            "title": "How can I view my order status?",
+            "subtitle": "<p>After you have <a href=\"https:\/\/www.bestbullysticks.com\/register\">created an account<\/a> and completed the checkout process, you can track your Order Status. You will also have immediate access to your purchase history. Simply log into your account and click on <a href=\"https:\/\/www.bestbullysticks.com\/customer\/orders\">Orders<\/a> to see all order details.<\/p>"
+          }
+        },
+        "0ed9438f-fe5d-41bf-ae23-d43e345bf935": {
+          "type": "Content",
+          "settings": {
+            "title": "What is your shipping policy?",
+            "subtitle": "<p>Within the 48 contiguous states, our flat rate shipping fee is $6.95 for orders up to $78.99. Orders of $79 or more qualify for Free Shipping. Orders are typically received between 7-9 days after shipping. However, this timeframe may vary depending on your location as Best Bully Sticks is located on the East Coast.<br\/>We do not ship on Saturdays, Sundays, or holidays. Large packages may experience longer delivery times depending on the shipment's destination. We will do our best to get your order to you on time, however Best Bully Sticks cannot be held responsible for conditions beyond our control such as severe weather or service interruptions.<\/p>"
+          }
+        },
+        "7fc19230-44d0-46a9-85a9-921b961420a0": {
+          "type": "Content",
+          "settings": {
+            "title": "What is your return policy?",
+            "subtitle": "<p><strong>UPDATED 4.3.2020<\/strong><\/p><p>Due to recent health and organizational changes effected by COVID-19, we will not be accepting returns at this time. This policy has been enacted to not only protect you, our customer, but to protect our associates and future customers from the spread of the virus. If you need assistance with an order or a product, please contact our customer service team for further information. Our customer service team can be reached Monday - Friday from 8AM - 5PM EST at <a href=\"tel:1-877-483-5853\">1-877-483-5853<\/a> or at <a href=\"mailto:info@bestbullysticks.com\">info@bestbullysticks.com<\/a>.<\/p><p><\/p><p><\/p><p>We stand behind each and every product that we offer for sale on our website. We carefully pick each product that becomes a part of our catalog based on pricing, quality, and nutritional value. From time to time, you may need to return products to us for whatever reason; we make this process as easy as possible.<\/p><p>Our return policy is to offer a full refund of the product price if you are unsatisfied for any reason; however, you, the customer, are responsible for returning the product in its original, sealed packaging, and for paying all shipping costs. As we sell consumable items, we are unable to accept returns of opened product. If you plan to make a return, we need to be notified within 1 (one) week of you receiving the products. All returns must be received by Best Bully Sticks within two weeks of notification of a return.<\/p><p>If you would like to process a return, please contact Best Bully Sticks via email or phone to obtain an RMA# for your return. This RMA# needs to be clearly printed on your return, and you should ship your return back to us using a trackable shipping service to ensure a safe delivery.<\/p><p>Upon receipt of your return, you will receive a refund for the value of the unused returned merchandise. At this time, we are not able to accept returns of any used items for safety reasons.<\/p><p>At no time do we charge any restocking or repackaging fees. We value your business and hope that you don't need to return product to us, but want you to feel comfortable knowing that you can if needed. <a href=\"https:\/\/www.bestbullysticks.com\/returns_bbs\">Visit here for more details<\/a><\/p>"
+          }
+        },
+        "f4bff292-502a-4683-9cf0-1d333d78c9e1": {
+          "type": "Content",
+          "settings": {
+            "title": "What is your AutoShip Program?",
+            "subtitle": "<p>We offer AutoShip for all of our products at intervals that fit your dog’s needs. Never run out of their favorite chews again all while saving money on your order. You will save <strong>20%<\/strong> on your first AutoShip order, and 10% on every continuous order after. Visit our <a href=\"https:\/\/www.bestbullysticks.com\/pages\/auto-ship-faq\" title=\"https:\/\/www.bestbullysticks.com\/pages\/auto-ship-faq\">AutoShip Program<\/a> FAQ page to learn more about the benefits of joining this program.<\/p>"
+          }
+        },
+        "11823840-9529-4cf7-884a-ad31c4cafa66": {
+          "type": "Content",
+          "settings": {
+            "title": "What’s the difference between made and baked in the USA?",
+            "subtitle": "<p>Our USA collection features products that are both made in the USA or baked in the USA. We source globally from the United States, North and South America, the European Union, and Australia. The Made in the USA Collection features products sourced from right here in the US. Some of our products are only baked in the USA, which means that the product can come from any of our other suppliers. For example, the majority of our bully sticks come from FDA-approved facilities in Brazil. We constantly monitor our supply chain to ensure we are receiving the highest quality ingredients.<\/p>"
+          }
+        },
+        "20915e6b-a1af-4bac-a148-94e68bfca60a": {
+          "type": "Content",
+          "settings": {
+            "title": "Do you offer a K9 Police discount?",
+            "subtitle": "<p>Best Bully Sticks proudly supports our K9 police, ATF, DEA, FBI, and other law enforcement personnel. We offer a 15% personalized coupon code that can be used anywhere on bestbullysticks.com . In order to qualify for this K9 Police Discount, you must have an active .gov police email address. If you are a retired law enforcement agent without an active .gov email address, please call us at 1-877-483-5853 to get a personalized discount code set up in your name. Thank you for your service.<\/p>"
+          }
+        },
+        "845afb38-29ba-49e0-9bf1-6ce411891753": {
+          "type": "Content",
+          "settings": {
+            "title": "Do you offer a K9 First Responders discount?",
+            "subtitle": "<p>Best Bully Sticks proudly supports our First Responders. We offer a 15% personalized coupon code that can be used anywhere on bestbullysticks.com . In order to qualify for this <a href=\"https:\/\/www.bestbullysticks.com\/k9-police-discount\">K9 Police Coupon and Discount<\/a>, you must have an active .gov police email address. If you are a retired law enforcement agent without an active .gov email address, please call us at 1-877-483-5853 to get a personalized discount code set up in your name. Thank you for your service.<\/p>"
+          }
+        },
+        "369e403d-004a-4923-80ef-516987aacbbc": {
+          "type": "Content",
+          "settings": {
+            "title": "Do you offer a Military discount?",
+            "subtitle": "<p>Best Bully Sticks proudly supports our US Military Active Duty and Veterans. We honor their service and respect their call to duty with a special 15% discount that can be used on bestbullysticks.com . To set up your discount, please follow these instructions:<\/p><p><strong>Active Military:<\/strong> Please send an email from your military email address to info@bestbullysticks.com, and we will get your account set up. Your discount will be automatically applied to your order when you checkout in your account. <strong>Veterans:<\/strong> Please call us at 877-483-5853 Monday-Friday 8:00AM-5:00PM EST to get your account set up.<\/p><p>We thank you for your service.<\/p>"
+          }
+        },
+        "7c596c77-6dde-4b2f-aefb-342bb06c17ba": {
+          "type": "Content",
+          "settings": {
+            "title": "Where can I find Best Bully Sticks coupons and discounts?",
+            "subtitle": "<p>Check out our <a href=\"https:\/\/www.bestbullysticks.com\/clearance\">Deals page<\/a> to find deep discounts on your dog’s favorite bully sticks, treats, and chews. These discounts and coupons apply to select products while supplies last, so don’t wait!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "cd81cd2e-bb4f-494d-8915-4c426b581145",
+        "a258f041-e06b-4844-9e7a-ade5af029058",
+        "0ed9438f-fe5d-41bf-ae23-d43e345bf935",
+        "7fc19230-44d0-46a9-85a9-921b961420a0",
+        "f4bff292-502a-4683-9cf0-1d333d78c9e1",
+        "11823840-9529-4cf7-884a-ad31c4cafa66",
+        "20915e6b-a1af-4bac-a148-94e68bfca60a",
+        "845afb38-29ba-49e0-9bf1-6ce411891753",
+        "369e403d-004a-4923-80ef-516987aacbbc",
+        "7c596c77-6dde-4b2f-aefb-342bb06c17ba"
+      ],
+      "settings": {
+        "wide_display": true,
+        "image": "shopify:\/\/shop_images\/Webp.net-resizeimage_-_2020-02-26T114123.837_1400x_67aa36e7-06a8-4570-a7b8-1008d089ec3f.jpg",
+        "pretext": "",
+        "title": "Frequently Asked Questions",
+        "subtitle": "",
+        "caption_background": false,
+        "caption_background_transparency": true,
+        "text_position": "center",
+        "text_align": "center",
+        "button1": "",
+        "button1_link": "",
+        "button1_highlight": true,
+        "button2": "",
+        "button2_link": "",
+        "button2_highlight": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-gallery-template",
+      "blocks": {
+        "ff2ed1e7-dbf6-46f7-8120-5988cd73a2ec": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "56dc07f4-fbcd-4c84-b72b-626713282406": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "c7297256-91ad-461b-ada9-7d5e3a9cc642": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "6da9e68f-6eab-4472-8d07-19a30a987cea": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "2665bdfb-61c7-4f11-a39e-abddff9d8275": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "79ac6c3b-8227-4c33-97a9-7d5d9fd4cf4a": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "16007870-0728-4127-95da-b0fe5ce394ae": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "74cb7057-e544-473c-97e8-39982d53a05f": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "52d13166-8815-43a2-aa4d-98bc53818db1": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "2cc26fbf-a0ea-4849-8a1e-acfc69bb1c08": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "dd49f966-873f-4543-8c21-cdc7f4611814": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "53af2f1e-37eb-45f3-a7df-9f18c1a68e58": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "0d124855-5bbd-4c14-bd97-d1d789e9d314": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "3663bb59-bfaf-4bf4-879e-c2374071f365": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "7f1214e1-27d2-40cf-9fe2-a3dc12cd082a": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        },
+        "441bbeef-1c2e-4514-a681-2fed98ccd05e": {
+          "type": "image",
+          "settings": {
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ff2ed1e7-dbf6-46f7-8120-5988cd73a2ec",
+        "56dc07f4-fbcd-4c84-b72b-626713282406",
+        "c7297256-91ad-461b-ada9-7d5e3a9cc642",
+        "6da9e68f-6eab-4472-8d07-19a30a987cea",
+        "2665bdfb-61c7-4f11-a39e-abddff9d8275",
+        "79ac6c3b-8227-4c33-97a9-7d5d9fd4cf4a",
+        "16007870-0728-4127-95da-b0fe5ce394ae",
+        "74cb7057-e544-473c-97e8-39982d53a05f",
+        "52d13166-8815-43a2-aa4d-98bc53818db1",
+        "2cc26fbf-a0ea-4849-8a1e-acfc69bb1c08",
+        "dd49f966-873f-4543-8c21-cdc7f4611814",
+        "53af2f1e-37eb-45f3-a7df-9f18c1a68e58",
+        "0d124855-5bbd-4c14-bd97-d1d789e9d314",
+        "3663bb59-bfaf-4bf4-879e-c2374071f365",
+        "7f1214e1-27d2-40cf-9fe2-a3dc12cd082a",
+        "441bbeef-1c2e-4514-a681-2fed98ccd05e"
+      ],
+      "settings": {
+        "show_divider": true,
+        "full_width": false,
+        "gallery_type": "masonry",
+        "grid-size": 5,
+        "enable_lightbox": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

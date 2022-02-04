@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-reviews-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

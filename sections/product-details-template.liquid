@@ -386,6 +386,9 @@
     {% assign models = product.media | where: 'media_type', 'model' | json %}
     ShopifyXR('addModels', {{ models }});
 </script>
+
+{% include 'product__structured-data' %}
+
 {% schema %}
 
 {

@@ -699,6 +699,9 @@
       padding: {{ section.settings.menu_top_padding }}px 10px 10px 10px;
     }
   {% endif %}
+  .menu a{
+    text-transform: {{ section.settings.text_transform }};
+  }
 </style>
 
 {% schema %}
@@ -790,6 +793,26 @@
     {
      "type": "header",
      "content": "Menus"
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Text Transform",
+      "options": [
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
     },
     {
       "type": "link_list",

@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "cart-template",
+      "blocks": {
+        "722014e5-95c8-495e-bc22-7ec2a0a1ecef": {
+          "type": "featured_collection",
+          "settings": {
+            "title": "SOME OTHER TREATS YOUR DOG WILL LOVE",
+            "collection_description": false,
+            "collection": "bully-sticks",
+            "collection_style": "slider",
+            "products_per": 5,
+            "products_limit": 9
+          }
+        }
+      },
+      "block_order": [
+        "722014e5-95c8-495e-bc22-7ec2a0a1ecef"
+      ],
+      "settings": {
+        "display_special_instructions": true,
+        "display_savings": true,
+        "cart_message": "",
+        "item_gift": "",
+        "item_gift_2": "",
+        "item_gift_3": "",
+        "cart_gift": "",
+        "cart_gift_earned": "",
+        "cart_gift_amount": 50
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

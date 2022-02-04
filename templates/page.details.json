@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-details-template",
+      "blocks": {
+        "ae235d1c-339b-4763-a6f1-ca3cd625ff3b": {
+          "type": "image_with_text_overlay",
+          "settings": {
+            "wide_display": true,
+            "image": "shopify:\/\/shop_images\/Webp.net-resizeimage_-_2020-02-26T120914.834_1400x_5e8d95c9-3fea-4e1e-ba81-7e01c9c4973c.jpg",
+            "pretext": "",
+            "title": "Our Story",
+            "subtitle": "",
+            "caption_background": false,
+            "caption_background_transparency": true,
+            "text_position": "left",
+            "text_align": "center",
+            "button1": "Contact Us",
+            "button1_link": "shopify:\/\/pages\/contact-us",
+            "button1_highlight": false,
+            "button2": "",
+            "button2_link": "",
+            "button2_highlight": false,
+            "mobile_image_crop": "none",
+            "mobile_text_below_image": true,
+            "mobile_text_color": ""
+          }
+        },
+        "f2a32ad1-bae9-4d88-b884-cb63400a3a33": {
+          "type": "divider",
+          "settings": {
+            "divider_spacing": 10,
+            "divider_border": false
+          }
+        },
+        "5f894cfb-7260-405a-a4c3-9c1e23fcd0bd": {
+          "type": "rich_text_and_image",
+          "settings": {
+            "title": "THE BEST BULLY STICKS STORY",
+            "content": "<p>Best Bully Sticks was founded with one goal in mind; provide <strong>top-notch bully sticks and single ingredient<\/strong> chews that dogs will love. We’ve been delivering prime-quality goods for over a decade. Our products are responsibly sourced from the <strong>finest suppliers, worldwide<\/strong>. We’re committed to meeting the <strong>highest quality<\/strong> standards. What’s more; our products will keep your dog occupied for hours.When it comes to chew greatness, Best Bully Sticks doesn’t shy away from a challenge. We’re all about <strong>first-rate, all-natural chews<\/strong> from quality ingredients. As pet owners, we want to give our dogs the best natural chews they can get. Best Bully Sticks customers count on us to provide hearty flavor, and we deliver the goods — every day of the week.<\/p>",
+            "text_size": "regular_text",
+            "text_alignment": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "02932b9a-d6d5-409c-8f28-306d623b420b": {
+          "type": "divider",
+          "settings": {
+            "divider_spacing": 25,
+            "divider_border": false
+          }
+        },
+        "f644b640-3d7c-40d9-941d-30c86b726e1b": {
+          "type": "page",
+          "settings": {
+            "content_page": "gallery-for-about-us"
+          }
+        },
+        "459c74fb-4ead-4dd3-86be-dc58bc3d49f8": {
+          "type": "divider",
+          "settings": {
+            "divider_spacing": 15,
+            "divider_border": false
+          }
+        },
+        "3d429846-6dd6-4b83-a1ce-e846107ebb0e": {
+          "type": "featured_collection",
+          "settings": {
+            "title": "STAFF FAVORITES",
+            "collection_description": false,
+            "collection": "bones",
+            "collection_style": "grid",
+            "products_per": 4,
+            "products_limit": 8
+          }
+        },
+        "f7ce47d6-7351-42a8-a9b5-5b4317b479f7": {
+          "type": "divider",
+          "settings": {
+            "divider_spacing": 20,
+            "divider_border": false
+          }
+        }
+      },
+      "block_order": [
+        "ae235d1c-339b-4763-a6f1-ca3cd625ff3b",
+        "f2a32ad1-bae9-4d88-b884-cb63400a3a33",
+        "5f894cfb-7260-405a-a4c3-9c1e23fcd0bd",
+        "02932b9a-d6d5-409c-8f28-306d623b420b",
+        "f644b640-3d7c-40d9-941d-30c86b726e1b",
+        "459c74fb-4ead-4dd3-86be-dc58bc3d49f8",
+        "3d429846-6dd6-4b83-a1ce-e846107ebb0e",
+        "f7ce47d6-7351-42a8-a9b5-5b4317b479f7"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

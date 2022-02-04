@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "shogun-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

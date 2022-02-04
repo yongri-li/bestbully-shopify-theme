@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-banner-template",
+      "settings": {
+        "wide_display": true,
+        "show_banner": true,
+        "image_darken": true,
+        "image": "shopify:\/\/shop_images\/BBS_Jan_NewAutoship_RedeemPrize_Webside_Header_1600x_258942c8-8e95-46a3-b782-7f78dcdfa97f.jpg",
+        "pretext": "<p>enroll in autoship, select a prize<\/p>",
+        "title": "official rules",
+        "subtitle": "<p>offer valid 1\/24 - 1\/26\/2021<\/p>",
+        "caption_background": false,
+        "caption_background_transparency": false,
+        "text_position": "center",
+        "text_align": "center",
+        "button1": "",
+        "button1_link": "",
+        "button1_highlight": false,
+        "button2": "",
+        "button2_link": "",
+        "button2_highlight": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

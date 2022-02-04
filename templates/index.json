@@ -1,0 +1,285 @@
+{
+  "sections": {
+    "1643931852b0c58f85": {
+      "type": "slideshow",
+      "blocks": {
+        "16439318522e52f528-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_4_2_1600x_3d071c47-2ca5-40a1-aedc-7aab653f7a5e.png",
+            "image_mobile": "shopify:\/\/shop_images\/800x700_3_1000x_799c4341-8cd9-4599-9a08-696234b43a4b.png",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "caption_background": false,
+            "caption_background_transparency": false,
+            "button1": "",
+            "button1_link": "shopify:\/\/collections\/discount-dog-treats",
+            "button1_highlight": false,
+            "button2": "",
+            "button2_link": "",
+            "button2_highlight": false,
+            "text_position": "center",
+            "text_align": "center",
+            "mobile_image_crop": "none"
+          }
+        },
+        "0f9aba37-add6-42c8-8727-3cfc8697f2f9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1750x450_3_1600x_b3793c87-2204-4a6a-be7e-973973f0ea90.png",
+            "image_mobile": "shopify:\/\/shop_images\/800x700_4_1000x_52f4436b-cc79-4a84-99ee-b11d593ce336.png",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "caption_background": false,
+            "caption_background_transparency": false,
+            "button1": "",
+            "button1_link": "shopify:\/\/collections\/all-products",
+            "button1_highlight": false,
+            "button2": "",
+            "button2_link": "",
+            "button2_highlight": false,
+            "text_position": "center",
+            "text_align": "center",
+            "mobile_image_crop": "none"
+          }
+        }
+      },
+      "block_order": [
+        "16439318522e52f528-1",
+        "0f9aba37-add6-42c8-8727-3cfc8697f2f9"
+      ],
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "slide",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": true,
+        "mobile_text_below_image": true,
+        "mobile_text_color": ""
+      }
+    },
+    "1643932176a0733a5a": {
+      "type": "divider",
+      "settings": {
+        "divider_spacing": 10,
+        "divider_border": false
+      }
+    },
+    "16439321800f4987b3": {
+      "type": "featured-promotions",
+      "blocks": {
+        "16439321807250f77b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12__inch_thin_bully_sticks_1600x_ee86ceee-de24-4f78-8f53-1ab3eefbced1.png",
+            "link": "shopify:\/\/products\/12-inch-thin-bully-sticks-16-count",
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "16439321807250f77b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1400x700_1600x_b6ceec70-b417-4dc5-8a8b-2aa00187c90b.png",
+            "link": "https:\/\/www.bestbullysticks.com\/products\/i-love-chew-box",
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "16439321807250f77b-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BEEF_COLLAGEN_THICK_RING_20_OFF_1600x_84fadbde-e47b-4d3b-aa8a-ea8f11f1cb80.jpg",
+            "link": "shopify:\/\/products\/collagen-thick-ring",
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "d2d708d9-4b4e-4e02-88d0-3dc5097d7321": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/50_off_4__Bully_1_1600x_90753063-3499-4ae7-9a88-9da1d08e269c.jpg",
+            "link": "shopify:\/\/products\/4-inch-bully-stick",
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "16439321807250f77b-0",
+        "16439321807250f77b-1",
+        "16439321807250f77b-2",
+        "d2d708d9-4b4e-4e02-88d0-3dc5097d7321"
+      ],
+      "settings": {
+        "featured_promos_grid": false,
+        "promo_text_on_image_enabled": true,
+        "featured_promos_per_row": 4,
+        "featured_links_animation": "",
+        "feature_style": "square"
+      }
+    },
+    "164393219539c3ac45": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Customer Favorites",
+        "collection_description": true,
+        "collection": "all-products",
+        "collection_style": "grid",
+        "products_per": 4,
+        "products_limit": 8,
+        "btn_text": "View More",
+        "btn_link": ""
+      }
+    },
+    "16439325942f5f970d": {
+      "type": "featured-text",
+      "settings": {
+        "title": "Dogs All Over America Are Drooling For Our Long-Lasting, Tasty Treats And Chews",
+        "content": "<p>Best Bully Sticks was founded with one goal in mind; provide top-notch bully sticks and single ingredient chews that dogs - and their owners - will love. And we’ve been delivering these prime-quality goods for over a decade!<\/p>",
+        "button_label": "OUR STORY",
+        "button_link": "shopify:\/\/pages\/about-us",
+        "text_size": "regular_text",
+        "text_alignment": "center"
+      }
+    },
+    "16439326378bcaa527": {
+      "type": "divider",
+      "settings": {
+        "divider_spacing": 10,
+        "divider_border": false
+      }
+    },
+    "16439326420eba6314": {
+      "type": "featured-promotions",
+      "blocks": {
+        "164393264233da6348-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/49338688_10161248898815207_2972961767992328192_o_1600x_2c7c8797-cf1d-48b6-8918-263a43ae0183.jpg",
+            "link": "shopify:\/\/collections\/bully-sticks",
+            "title": "BULLY STICKS",
+            "text": "<p>A great alternative to rawhide, our Bully Sticks contain no added preservatives, or additional chemicals of any kind.<\/p>",
+            "button_label": "SHOP NOW"
+          }
+        },
+        "164393264233da6348-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ears_1600x_be1088d4-0e10-4081-964a-470e45616be8.jpg",
+            "link": "https:\/\/bestbully.myshopify.com\/collections\/ears",
+            "title": "PIG EARS",
+            "text": "<p>The perfect treats for dogs. Our ear chews are whole, not cut into slices, ensuring your dog gets a full, long-lasting experience. <\/p>",
+            "button_label": "shop now"
+          }
+        },
+        "164393264233da6348-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jerky_1600x_77731e34-a27f-4f17-b4b8-3533705794f5.jpg",
+            "link": "shopify:\/\/collections\/jerky",
+            "title": "JERKY",
+            "text": "<p>With duck, beef, and chicken jerky options for your dog, you can’t go wrong! Our selection of jerky treats is perfect for dogs of all sizes.<\/p>",
+            "button_label": "SHOP NOW"
+          }
+        },
+        "20775fb1-9e77-4669-a42a-97140c704b33": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/55916134_10161579286265207_6677838215795179520_o_1600x_db89e8b9-ae9f-4fb7-8bf6-0372b85a0401.jpg",
+            "link": "shopify:\/\/collections\/chews",
+            "title": "OTHER CHEWS",
+            "text": "<p>Healthy rawhide alternatives don’t stop at bully sticks! At Best Bully Sticks, you can find nutritious, single-ingredient tripe, gullet, and trachea chews and variety packs for dogs.<\/p>",
+            "button_label": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "164393264233da6348-0",
+        "164393264233da6348-1",
+        "164393264233da6348-2",
+        "20775fb1-9e77-4669-a42a-97140c704b33"
+      ],
+      "settings": {
+        "featured_promos_grid": true,
+        "promo_text_on_image_enabled": true,
+        "featured_promos_per_row": 4,
+        "featured_links_animation": "fadeInDown",
+        "feature_style": "square"
+      }
+    },
+    "1643933022a5c56634": {
+      "type": "featured-text",
+      "settings": {
+        "title": "ABOUT OUR BULLY STICKS",
+        "content": "<p>Best Bully Sticks provides high-quality bully sticks, dog treats, and dog chews. Our bully sticks and other products, like antlers and jerky, come from livestock and are crafted into totally natural, protein-rich dog treats and chews. Unlike chemically treated rawhides that promote bacteria growth and can present a choking hazard, bully sticks are hygienic and durable. Shop Best Bully Sticks now and find treats you and your dog will love.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center"
+      }
+    },
+    "164393302793e92634": {
+      "type": "image-text",
+      "blocks": {
+        "16439330271f9e71cc-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Webp.net-resizeimage_-_2020-02-23T223849.395_600x_a8e8d4f5-74f7-4ad3-8c6a-77fb95e4e914.jpg",
+            "image_crop": "center",
+            "title": "WHY THEY ARE BEST",
+            "text": "<p><strong>THEY'RE MADE WITH YOUR DOG'S HEALTH IN MIND<\/strong><\/p><p>· Protein-rich<\/p><p>· Helps support dental health through chewing action<\/p><p>· Durable for lots of entertainment<\/p><p><\/p><p><strong>THEY'RE MADE WITH YOUR DOG'S SAFETY IN MIND<\/strong><\/p><p>· Highly digestible<\/p><p>· No artificial preservatives, colors, or flavors<\/p><p>· Manufactured under industry-leading food safety programs<\/p><p><\/p><p><\/p><p><strong>THEY’RE NATURAL<\/strong><\/p><p>· From bulls & livestock<\/p><p>· Many products are single-ingredient<\/p>",
+            "button_label": "SHOP ALL BULLY STICKS",
+            "link": "shopify:\/\/collections\/bully-sticks",
+            "bg_color": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "16439330271f9e71cc-0"
+      ],
+      "settings": {
+        "frontpage_grid_style": true,
+        "featured_links_per_row": "1",
+        "frontpage_text_align": "left",
+        "frontpage_image_position": "left"
+      }
+    },
+    "1643933119055e4ea8": {
+      "type": "instafeed",
+      "settings": {
+        "heading_font": "helvetica_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": "<!-- -->"
+      }
+    },
+    "164393315199a00c04": {
+      "type": "divider",
+      "settings": {
+        "divider_spacing": 20,
+        "divider_border": false
+      }
+    }
+  },
+  "order": [
+    "1643931852b0c58f85",
+    "1643932176a0733a5a",
+    "16439321800f4987b3",
+    "164393219539c3ac45",
+    "16439325942f5f970d",
+    "16439326378bcaa527",
+    "16439326420eba6314",
+    "1643933022a5c56634",
+    "164393302793e92634",
+    "1643933119055e4ea8",
+    "164393315199a00c04"
+  ]
+}

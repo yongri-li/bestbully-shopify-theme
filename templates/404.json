@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "404-main",
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "not-found-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "recommendations"
+  ]
+}

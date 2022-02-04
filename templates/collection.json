@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-template-instantsearch",
+      "settings": {
+        "display_collection_title": false,
+        "collection_breadcrumb": true,
+        "collection_tags": false,
+        "collection_sort": false,
+        "featured_collection_image": true,
+        "image": "shopify:\/\/shop_images\/thumbnail_collections_BFCM_NoCopyBF_CM_1400x.progressive_b007df14-fddd-4c6c-bdb9-1e1aec8a6ec1.jpg",
+        "image_darken": false,
+        "products_per_row": 3,
+        "pagination_limit": 48,
+        "toggle": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

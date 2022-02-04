@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "contact-custom-template",
+      "blocks": {
+        "16310dd2-1a72-4d3c-85b9-fc5f22409ac3": {
+          "type": "textfield",
+          "settings": {
+            "label": "Title",
+            "placeholder": "Name",
+            "required": false
+          }
+        },
+        "f5cf003e-5f58-4ca7-83f2-93a252410323": {
+          "type": "email",
+          "settings": {
+            "label": "Email",
+            "placeholder": "Email"
+          }
+        },
+        "7f9eb697-b82b-484c-8946-ff1acbd51a48": {
+          "type": "textarea",
+          "settings": {
+            "label": "Message",
+            "placeholder": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "16310dd2-1a72-4d3c-85b9-fc5f22409ac3",
+        "f5cf003e-5f58-4ca7-83f2-93a252410323",
+        "7f9eb697-b82b-484c-8946-ff1acbd51a48"
+      ],
+      "settings": {
+        "image_darken": false,
+        "title": "Get in touch",
+        "subtitle": "Subheading",
+        "contact_subheading": "Contact Us Today!",
+        "contact_content": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.<\/p>",
+        "contact_text_position": "left",
+        "contact_text_alignment": "left",
+        "contact_social_buttons": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "settings": {
+        "wide_display": true,
+        "map_address": "",
+        "map_height": 400,
+        "zoom_level": 16,
+        "api_key": "",
+        "show_pin": true,
+        "map_style": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "map"
+  ]
+}

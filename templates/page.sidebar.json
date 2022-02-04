@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-sidebar-template",
+      "blocks": {
+        "a1ec932d-0ff8-421a-9a95-4e0f3770595a": {
+          "type": "menu",
+          "settings": {
+            "custom_menu_linklist": "best-bully-q-a"
+          }
+        }
+      },
+      "block_order": [
+        "a1ec932d-0ff8-421a-9a95-4e0f3770595a"
+      ],
+      "settings": {
+        "toggle": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

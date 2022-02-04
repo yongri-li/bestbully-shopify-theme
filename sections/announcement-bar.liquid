@@ -1,7 +1,7 @@
 
 {% if section.settings.promo_text != blank %}
 <div class="promo_banner">
-    <div class="promo_banner__content">
+    <div class="promo_banner__content" style="text-transform: {{ section.settings.text_transform }};">
         {{ section.settings.promo_text }}
     </div>
     <div class="promo_banner-close"></div>
@@ -10,7 +10,7 @@
 {% if section.settings.enable %}
 <div class="announcement-bar" style="background: {{ section.settings.bg }}">
     <div class="container">
-        <div class="announcement-bar__text" style="color: {{ section.settings.text_color }}">
+        <div class="announcement-bar__text" style="color: {{ section.settings.text_color }}; text-transform: {{ section.settings.text_transform }};">
             <a href="{{ section.settings.url }}">{{ section.settings.text }}</a>
             <div class="mobile-text">
                 <a href="{{ section.settings.mobile_url }}" >{{ section.settings.mobile_text }}</a>
@@ -32,6 +32,26 @@
     {
         "type": "header",
         "content": "Announcement bar"
+    },
+    {
+        "type": "select",
+        "id": "text_transform",
+        "label": "Text Transform",
+        "options": [
+            {
+            "value": "uppercase",
+            "label": "Uppercase"
+            },
+            {
+            "value": "lowercase",
+            "label": "Lowercase"
+            },
+            {
+            "value": "capitalize",
+            "label": "Capitalize"
+            }
+        ],
+        "default": "uppercase"
     },
     {
         "type": "richtext",

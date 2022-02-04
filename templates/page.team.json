@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-team-template",
+      "settings": {
+        "image_position": "left",
+        "title": "Meet our Portland crew",
+        "text": "<p>Whether it's running, dancing, yoga, pilates, boxing, or trampolining - we all love <strong>moving<\/strong>, and believe that movement heals your soul. We are a dynamic crew of likeminded folks who care about the wellness of others in our community. We love partnering with other locals for events and collaborations, and are always open to new ideas. We focus on bringing people together in our space where everybody is always welcome.<\/p>",
+        "text_position": "left",
+        "employee_per_row": 3,
+        "member_color": "#fff",
+        "member_accent_color": "#d54d4d",
+        "member_overlay_color": "#000"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

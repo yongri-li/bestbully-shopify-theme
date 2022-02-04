@@ -2247,6 +2247,26 @@
         "type": "textarea",
         "id": "safety_info_5_text",
         "label": "Safety Information 5 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_6_tag",
+        "label": "Safety Information 6 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_6_text",
+        "label": "Safety Information 6 Text"
+      },
+      {
+        "type": "text",
+        "id": "safety_info_7_tag",
+        "label": "Safety Information 7 Tag"
+      },
+      {
+        "type": "textarea",
+        "id": "safety_info_7_text",
+        "label": "Safety Information 7 Text"
       }
     ]
   }

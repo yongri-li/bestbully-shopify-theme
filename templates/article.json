@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "blocks": {
+        "9a917dbc-1034-4d68-9ae7-fecc45beca8e": {
+          "type": "search",
+          "settings": {}
+        },
+        "ebdcaf93-c762-4888-aa72-f4c1d8ea246d": {
+          "type": "recent_posts",
+          "settings": {
+            "blog_post_count": "5"
+          }
+        },
+        "f7f9fc16-b665-49c4-a4dd-12f1f51fce70": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_title": "newsletter signup",
+            "newsletter_text": "<p>Be the first to know about upcoming sales and promos. Get a <strong>10% discount<\/strong> <strong>coupon<\/strong> when you subscribe!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9a917dbc-1034-4d68-9ae7-fecc45beca8e",
+        "ebdcaf93-c762-4888-aa72-f4c1d8ea246d",
+        "f7f9fc16-b665-49c4-a4dd-12f1f51fce70"
+      ],
+      "settings": {
+        "wide_display": true,
+        "featured_image": "banner",
+        "image_darken": true,
+        "blog_breadcrumb": true,
+        "blog_pagination": true,
+        "blog_tags": true,
+        "blog_byline": false,
+        "read_time": true,
+        "blog_date": true,
+        "blog_author": false,
+        "display_social_buttons": true,
+        "blog_comment_count": false,
+        "blog_additional_posts": true,
+        "read_more_link": false,
+        "toggle": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
