@@ -1805,7 +1805,15 @@ body.is-active {
 @media (max-width: 768px) {
   #header.mobile_nav-fixed--true,
   .mobile_nav-fixed--false.is-active #header {
-    top: 36px;
+    top: 36px !important;
+  }
+
+  .banner-template-section {
+    padding-top: 80px;
+
+    .banner {
+      margin-top: 0 !important;
+    }
   }
 }
 
