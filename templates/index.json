@@ -135,7 +135,7 @@
         "products_per": 4,
         "products_limit": 8,
         "btn_text": "View More",
-        "btn_link": ""
+        "btn_link": "shopify:\/\/collections\/all-products"
       }
     },
     "16439325942f5f970d": {
@@ -159,52 +159,52 @@
     "16439326420eba6314": {
       "type": "featured-promotions",
       "blocks": {
-        "164393264233da6348-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/49338688_10161248898815207_2972961767992328192_o_1600x_2c7c8797-cf1d-48b6-8918-263a43ae0183.jpg",
-            "link": "shopify:\/\/collections\/bully-sticks",
-            "title": "BULLY STICKS",
-            "text": "<p>A great alternative to rawhide, our Bully Sticks contain no added preservatives, or additional chemicals of any kind.<\/p>",
-            "button_label": "SHOP NOW"
-          }
-        },
-        "164393264233da6348-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ears_1600x_be1088d4-0e10-4081-964a-470e45616be8.jpg",
-            "link": "https:\/\/bestbully.myshopify.com\/collections\/ears",
-            "title": "PIG EARS",
-            "text": "<p>The perfect treats for dogs. Our ear chews are whole, not cut into slices, ensuring your dog gets a full, long-lasting experience. <\/p>",
-            "button_label": "shop now"
-          }
-        },
-        "164393264233da6348-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/jerky_1600x_77731e34-a27f-4f17-b4b8-3533705794f5.jpg",
-            "link": "shopify:\/\/collections\/jerky",
-            "title": "JERKY",
-            "text": "<p>With duck, beef, and chicken jerky options for your dog, you can’t go wrong! Our selection of jerky treats is perfect for dogs of all sizes.<\/p>",
-            "button_label": "SHOP NOW"
-          }
-        },
-        "20775fb1-9e77-4669-a42a-97140c704b33": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/55916134_10161579286265207_6677838215795179520_o_1600x_db89e8b9-ae9f-4fb7-8bf6-0372b85a0401.jpg",
-            "link": "shopify:\/\/collections\/chews",
-            "title": "OTHER CHEWS",
-            "text": "<p>Healthy rawhide alternatives don’t stop at bully sticks! At Best Bully Sticks, you can find nutritious, single-ingredient tripe, gullet, and trachea chews and variety packs for dogs.<\/p>",
-            "button_label": "SHOP NOW"
-          }
-        }
-      },
-      "block_order": [
-        "164393264233da6348-0",
-        "164393264233da6348-1",
-        "164393264233da6348-2",
-        "20775fb1-9e77-4669-a42a-97140c704b33"
+        "f4d00c8a-1911-4690-9ff3-b7092d84cbe9": {	
+          "type": "image",	
+          "settings": {	
+            "image": "shopify:\/\/shop_images\/1400x700_2.png",	
+            "link": "https:\/\/www.bestbullysticks.com\/collections\/collagen-sticks",	
+            "title": "",	
+            "text": "",	
+            "button_label": ""	
+          }	
+        },	
+        "0f024b6c-fcab-4d93-bbb6-bcff5098050f": {	
+          "type": "image",	
+          "settings": {	
+            "image": "shopify:\/\/shop_images\/1400X700-2.png",	
+            "link": "shopify:\/\/products\/bbs-sampler-boxes",	
+            "title": "",	
+            "text": "",	
+            "button_label": ""	
+          }	
+        },	
+        "51603997-6d5a-4a9a-be7e-de83441a9354": {	
+          "type": "image",	
+          "settings": {	
+            "image": "shopify:\/\/shop_images\/1400x700_4911a274-ccbe-45c8-9711-6c44c0071d55.png",	
+            "link": "shopify:\/\/products\/i-love-chew-box",	
+            "title": "",	
+            "text": "",	
+            "button_label": ""	
+          }	
+        },	
+        "91aafcf7-d252-4317-9f5b-d906e4f1d7f4": {	
+          "type": "image",	
+          "settings": {	
+            "image": "shopify:\/\/shop_images\/homepage_tile_1400x700_1.png",	
+            "link": "https:\/\/www.bestbullysticks.com\/pages\/doggy-dental",	
+            "title": "",	
+            "text": "",	
+            "button_label": ""	
+          }	
+        }	
+      },	
+      "block_order": [	
+        "f4d00c8a-1911-4690-9ff3-b7092d84cbe9",	
+        "0f024b6c-fcab-4d93-bbb6-bcff5098050f",	
+        "51603997-6d5a-4a9a-be7e-de83441a9354",	
+        "91aafcf7-d252-4317-9f5b-d906e4f1d7f4"	
       ],
       "settings": {
         "featured_promos_grid": true,

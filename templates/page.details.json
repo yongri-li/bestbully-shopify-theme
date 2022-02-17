@@ -6,7 +6,7 @@
         "ae235d1c-339b-4763-a6f1-ca3cd625ff3b": {
           "type": "image_with_text_overlay",
           "settings": {
-            "wide_display": true,
+            "wide_display": false,
             "image": "shopify:\/\/shop_images\/Webp.net-resizeimage_-_2020-02-26T120914.834_1400x_5e8d95c9-3fea-4e1e-ba81-7e01c9c4973c.jpg",
             "pretext": "",
             "title": "Our Story",
